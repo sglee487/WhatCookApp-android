@@ -7,9 +7,13 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.sg.whatcook.MainDestination
 
 @Composable
 fun WhatCookTopAppBar(
+    topScreens: List<MainDestination>,
+    onTabSelected: (MainDestination) -> Unit,
+    currentScreen: MainDestination
 ) {
     Surface(
         Modifier
